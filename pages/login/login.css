@@ -93,12 +93,11 @@ input[type="password"]::placeholder {
     margin-top: 45px;
 }
 #submitOrReg{
-    /*margin-left: 32px;*/
-    display: flex;
     margin: 0 auto;
     width: 82.93%;
     margin-top: 24px;
     height: 100px;
+    transition: 0.3s;
 }
 #submit{
     border-radius: 8px;
@@ -108,6 +107,7 @@ input[type="password"]::placeholder {
     border: none;
     border-radius: 8px;
     background: var(--purple, #633CFF);
+    cursor: pointer;
 }
 #submit span{
     color: var(--white, #FFF);
@@ -115,5 +115,25 @@ input[type="password"]::placeholder {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
+    line-height: 150%;
+}
+#submitOrReg:active{
+    scale: 0.95;
+}
+#createAcc{
+    color: var(--grey, #737373);
+    text-align: center;
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+#createAcc span{
+    color: var(--purple, #633CFF);
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 150%;
 }
