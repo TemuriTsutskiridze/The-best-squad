@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+#head{
+    margin: 32px;
+    gap: 64px;
+}
+#loginBox{
+    margin-top: 71.5px;
+    margin-left: 32px;
+}
+#loginTxt{
+    color: var(--dark-grey, #333);
+    font-family: Instrument Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+#loginTxt span{
+    color: var(--grey, #737373);
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+#parametersBox{
+    margin-top: 40px;
+    height: 296px;
+    margin-right: 32px;
+}
+.parameterDesc{
+    color: var(--dark-grey, #333);
+    font-family: Instrument Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.parameterInput {
+    display: flex;
+    align-items: stretch;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--borders, #D9D9D9);
+    background: var(--white, #FFF);
+}
+
+.parameterInput input {
+    flex: 1; 
+    border: none;
+    outline: none;
+}
+.parameterInput input{
+    height: 100%;
+    width: 100%;
+}
+.input-with-image {
+    background-image: url('../../assets/login/icon-email.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+input[type="email"]::placeholder {
+    color: var(--dark-grey, #333);
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.password-input-with-image {
+    background-image: url('../../assets/login/icon-password.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.parameterDesc.password{
+    margin-top: 45px;
+}
+#submit{
+    display: flex;
+    align-self: center;
+    border-radius: 8px;
+    background: var(--purple, #633CFF);
+    width: 311px;
+    height: 46px;
+}
