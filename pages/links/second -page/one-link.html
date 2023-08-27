@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>one-link</title>
+    <link rel="stylesheet" href="../../../globals.css" />
+    <link rel="stylesheet" href="../links.css" />
+    <link rel="stylesheet" href="one-link.css" />
+    <script></script>
+  </head>
+  <body>
+    <header>
+      <div class="icons">
+        <img id="logo-devlinks" src="../../assets/logo-devlinks-small.svg" />
+        <div class="two-icon">
+          <div class="link-div flex">
+            <img id="link" src="../../assets/icon-links-header.svg" />
+          </div>
+          <img
+            id="profile-details"
+            src="../../assets/icon-profile-details-header.svg"
+          />
+        </div>
+        <div class="preview-div flex">
+          <img id="preview" src="../../assets/icon-preview-header.svg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="text">
+        <h1>Customize your links</h1>
+        <span class="first"
+          >Add/edit/remove links below and then share all your profiles with the
+          world!</span
+        >
+        <button id="add">+ Add new link</button>
+      </div>
+      <div class="container">
+        <div class="link-remove-text div">
+          <div class="flex">
+            <img
+              src="../../assets/links-assets/icon-drag-and-drop.svg"
+              id=" drag-and-drop"
+            />
+            <span class="link-one"> Link #1 </span>
+          </div>
+          <span class="remove">Remove</span>
+        </div>
+        <div class="inputs-div">
+          <span class="platform">Platform</span>
+          <select id="github" name="github">
+            <option value="github">github</option>
+          </select>
+          <div class="input-link">
+            <span class="link-span">Link</span>
+            <input
+              type="text"
+              id="fname"
+              placeholder="e.g.https://www.github.com/johnappleseed"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <hr class="line" />
+      <div class="button-div">
+        <button id="save">Save</button>
+      </div>
+    </footer>
+  </body>
+</html>
