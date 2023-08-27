@@ -238,7 +238,7 @@ main {
     color: var(--grey, #737373);
     font-size: 16px;
     font-weight: 600;
-    line-height: 150%;
+    line-height: 24px;
   }
   #add {
     min-width: 641px;
@@ -274,5 +274,8 @@ main {
     height: 46px;
     position: absolute;
     right: 40px;
+  }
+  .main-container {
+    padding: 23px;
   }
 }
