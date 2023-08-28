@@ -44,7 +44,6 @@ body{
     line-height: 150%;
 }
 .parameterInput {
-    display: flex;
     align-items: stretch;
     padding: 12px 16px;
     border-radius: 8px;
@@ -93,6 +92,7 @@ input[type="password"]::placeholder {
     margin-top: 45px;
 }
 #submitOrReg{
+    display: flex;
     margin: 0 auto;
     width: 82.93%;
     margin-top: 24px;
@@ -135,4 +135,37 @@ input[type="password"]::placeholder {
     font-weight: 400;
     line-height: 150%;
     cursor: pointer;
+}
+@media (min-width:728px){
+    *{
+        margin: 0;
+    }
+    body{
+        background: var(--light-grey, #FAFAFA);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #loginBox{
+        width: 476px;
+        height: 482px;
+        margin: 0px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    #loginTxt{
+        color: var(--dark-grey, #333);
+        font-family: Instrument Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    #parametersBox{
+        margin: 0px 0px 0px 40px;
+    }
 }
