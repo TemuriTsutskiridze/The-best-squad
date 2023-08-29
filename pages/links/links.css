@@ -207,6 +207,9 @@ main {
 #devlinks-large {
   display: none;
 }
+.tablet-version {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   header {
     padding: 24px;
@@ -264,7 +267,7 @@ main {
   .using-link {
     padding: 0px 100px;
   }
-  footer {
+  .mobile-version {
     margin-top: 10px;
     position: relative;
     padding: 24px;
@@ -277,5 +280,19 @@ main {
   }
   .main-container {
     padding: 23px;
+  }
+  .container {
+    min-width: 640px;
+    min-height: 228px;
+    padding: 20px;
+  }
+  #github {
+    width: 100%;
+  }
+  .tablet-version {
+    margin-top: 10px;
+    position: relative;
+    padding: 20px;
+    top: 250px;
   }
 }
