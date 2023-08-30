@@ -71,6 +71,7 @@ body{
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 30px;
+    width: 89%;
 }
 input[type="email"]::placeholder {
     color: var(--dark-grey, #333);
@@ -123,7 +124,9 @@ input[type="password"]::placeholder {
     font-weight: 600;
     line-height: 150%;
 }
-
+input{
+    width: 4002323px;
+}
 #createAcc{
     color: var(--grey, #737373);
     text-align: center;
@@ -143,6 +146,9 @@ input[type="password"]::placeholder {
     line-height: 150%;
     cursor: pointer;
 }
+input{
+    all: unset;
+}
 @media (min-width:728px){
     *{
         margin: 0;
@@ -157,7 +163,7 @@ input[type="password"]::placeholder {
     }
     #loginBox{
         width: 476px;
-        height: 482px;
+        height: 500px;
         margin: 0px;
         background-color: white;
         border-radius: 10px;

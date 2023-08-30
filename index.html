@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img id="head" src="../../assets/login/logo-devlinks-large.svg" alt="devlinks">
+        <img id="head" src="./assets/login/logo-devlinks-large.svg" alt="devlinks">
     </header>
     <div id="loginBox">
         <p id="loginTxt">Login<br>
@@ -20,19 +20,16 @@
             <p class="parameterDesc">
                 Email Address
             </p>
-            <div class="parameterInput">
-                <label for="email address">
-                    <input class="input-with-image" type="email" placeholder="e.g. alex@email.com">
-                </label>
-            </div>   
+            <label for="email address">
+                <input class="parameterInput input-with-image" type="email" placeholder="e.g. alex@email.com"></input>
+            </label>
+               
             <p class="parameterDesc password">
                 Password
             </p>
-            <div class="parameterInput">
-                <label for="password">
-                    <input class="input-with-image password" type="password" placeholder="Enter your password">
-                </label>
-            </div>         
+            <label for="password">
+                <input class="parameterInput input-with-image password" for="password" type="password" placeholder="Enter your password"></input>   
+            </label>
             <div id="submitOrReg">
                 <button id="submit">
                     <span>Login</span>
