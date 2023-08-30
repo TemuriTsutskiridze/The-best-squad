@@ -66,12 +66,19 @@ body{
     height: 100%;
     width: 386;
 }
-.input-with-image {
+.email{
+    background-image: url('../../assets/login/icon-email.svg');
+}
+.input-with-image{
+    width: 95%;
+    cursor: text;
+    transition: 0.4s;
+}
+.input-with-image.email {
     background-image: url('../../assets/login/icon-email.svg');
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 30px;
-    width: 89%;
 }
 input[type="email"]::placeholder {
     color: var(--dark-grey, #333);
@@ -115,6 +122,7 @@ input[type="password"]::placeholder {
     border-radius: 8px;
     background: var(--purple, #633CFF);
     cursor: pointer;
+    transition: 0.4s;
 }
 #submit span{
     color: var(--white, #FFF);
@@ -123,9 +131,6 @@ input[type="password"]::placeholder {
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
-}
-input{
-    width: 4002323px;
 }
 #createAcc{
     color: var(--grey, #737373);
@@ -146,10 +151,19 @@ input{
     line-height: 150%;
     cursor: pointer;
 }
+#submit:active{
+    border-radius: 8px;
+    background: var(--purple-hover-color, #BEADFF);
+    box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
+    scale: 0.97;
+}
 input{
     all: unset;
 }
 @media (min-width:728px){
+    .input-with-image{
+        width: 89%;
+    }
     *{
         margin: 0;
     }
