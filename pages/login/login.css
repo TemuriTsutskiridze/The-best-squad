@@ -107,11 +107,11 @@ input[type="password"]::placeholder {
 }
 #submitOrReg{
     display: flex;
-    margin: 0 auto;
-    width: 82.93%;
     margin-top: 24px;
     height: 100px;
     transition: 0.3s;
+    align-items: center;
+    justify-content: center;
 }
 #submit{
     border-radius: 8px;
