@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap");
+
 .flex {
   display: flex;
   justify-content: center;
@@ -66,6 +68,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Instrument Sans", sans-serif;
 }
 #add {
   border-radius: 8px;
@@ -170,16 +173,20 @@ main {
 #github {
   border-radius: 8px;
   border: 1px solid var(--borders, #d9d9d9);
-  background: url(../assets/links-assets/icon-github.svg) var(--white, #fff);
+  background-image: url(../assets/links-assets/icon-github.svg),
+    url(../assets/links-assets/arrow-icon.svg);
   background-repeat: no-repeat;
   background-position-y: center;
-  background-position-x: 16px;
+  background-position-x: 16px, 223px;
   margin-top: 4px;
   display: flex;
   padding: 12px 38px;
   align-items: center;
   gap: 12px;
   min-width: 255px;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
 }
 .input-link {
   margin-top: 12px;
@@ -209,6 +216,9 @@ main {
 }
 .tablet-version {
   display: none;
+}
+.small {
+  gap: 8px;
 }
 @media screen and (min-width: 768px) {
   header {
@@ -288,11 +298,14 @@ main {
   }
   #github {
     width: 100%;
+    background-position-x: 16px, 570px;
   }
   .tablet-version {
     margin-top: 10px;
     position: relative;
     padding: 20px;
     top: 250px;
+  }
+  @media screen and (min-width: 1440px) {
   }
 }

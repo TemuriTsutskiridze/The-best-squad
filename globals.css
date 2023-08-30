@@ -5,7 +5,6 @@
   border: 0;
   border: none;
 }
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap");
 :root {
   --purple: #633cff;
   --lightPurple: #efebff;
@@ -18,6 +17,6 @@
   --purple-hover-color: #beadff;
 }
 body {
-  font-family: "Instrument Sans";
+  font-family: "Instrument Sans", sans-serif;
   font-style: normal;
 }
