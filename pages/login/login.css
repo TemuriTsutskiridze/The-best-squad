@@ -31,7 +31,7 @@ body{
     line-height: 150%;
 }
 #parametersBox{
-    width: 396px;
+    width: 311px;
 }
 .parameterDesc{
     color: var(--dark-grey, #333);
@@ -162,6 +162,9 @@ input{
 @media (min-width:728px){
     .input-with-image{
         width: 89%;
+    }
+    #parametersBox{
+        width: 396px;
     }
     *{
         margin: 0;
