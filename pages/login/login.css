@@ -31,9 +31,7 @@ body{
     line-height: 150%;
 }
 #parametersBox{
-    margin-top: 40px;
-    height: 296px;
-    margin-right: 32px;
+    width: 396px;
 }
 .parameterDesc{
     color: var(--dark-grey, #333);
@@ -107,6 +105,7 @@ input[type="password"]::placeholder {
 }
 #submitOrReg{
     display: flex;
+    flex-direction: column;
     margin-top: 24px;
     height: 100px;
     transition: 0.3s;
