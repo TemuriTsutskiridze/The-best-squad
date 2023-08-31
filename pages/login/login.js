@@ -33,9 +33,9 @@ function validate(event){
         // password.style.border = "none";
         // passwordError.style.display = "none";
     }
-    if (emailValidation && passwordValidation) {
-        window.location.assign("link-sharing.html")
-    }
+    // if (emailValidation && passwordValidation) {
+    //     window.location.assign("link-sharing.html")
+    // }
 }
 function changeStyles(input, error, displayStyle, borderStyle){
     input.style.border = borderStyle
