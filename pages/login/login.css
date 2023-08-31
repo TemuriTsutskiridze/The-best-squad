@@ -77,9 +77,9 @@ body{
     background-image: url('../../assets/login/icon-email.svg');
 }
 .input-with-image{
-    width: 95%;
     cursor: text;
     transition: 0.4s;
+    width: 80%;
 }
 .input-with-image.email {
     background-image: url('../../assets/login/icon-email.svg');
