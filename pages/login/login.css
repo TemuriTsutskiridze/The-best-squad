@@ -4,6 +4,9 @@
     margin: 0;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
 }
 #head{
@@ -13,7 +16,7 @@ body{
 #loginBox{
     margin-top: 71.5px;
     margin-left: 32px;
-}
+}   
 #loginTxt{
     color: var(--dark-grey, #333);
     font-family: Instrument Sans;
@@ -31,9 +34,15 @@ body{
     line-height: 150%;
 }
 #parametersBox{
+    display: flex;
+    width: 80%;
+    align-self: center;
+    flex-direction: column;
+    height: 400px;
     width: 311px;
 }
 .parameterDesc{
+    margin-top: 40px;
     color: var(--dark-grey, #333);
     font-family: Instrument Sans;
     font-size: 12px;
@@ -116,7 +125,7 @@ input[type="password"]::placeholder {
     border-radius: 8px;
     width: 311px;
     height: 46px;
-    margin: auto;
+    margin: 24px auto 24px auto ;
     border: none;
     border-radius: 8px;
     background: var(--purple, #633CFF);
@@ -183,6 +192,8 @@ input{
         margin: 0px;
         background-color: white;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
     }
     #loginTxt{
         color: var(--dark-grey, #333);
@@ -195,7 +206,11 @@ input{
         margin-top: 40px;
     }
     #parametersBox{
-        margin: 0px 0px 0px 40px;
+        display: flex;
+        width: 80%;
+        align-self: center;
+        flex-direction: column;
+        height: 400px;
     }
     #createAcc span{
         display: inline;
