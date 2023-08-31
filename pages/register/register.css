@@ -4,6 +4,9 @@
     margin: 0;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
 }
 #head{
@@ -31,9 +34,15 @@ body{
     line-height: 150%;
 }
 #parametersBox{
+    display: flex;
+    width: 80%;
+    align-self: center;
+    flex-direction: column;
+    height: 400px;
     width: 311px;
 }
 .parameterDesc{
+    margin-top: 40px;
     color: var(--dark-grey, #333);
     font-family: Instrument Sans;
     font-size: 12px;
@@ -68,12 +77,12 @@ body{
     background-image: url('../../assets/login/icon-email.svg');
 }
 .input-with-image{
-    width: 95%;
     cursor: text;
     transition: 0.4s;
+    width: 80%;
 }
 .input-with-image.email {
-    background-image: url('../../assets/login/icon-email.svg');
+    background-image: url('../../assets/icon-email.svg');
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -95,7 +104,7 @@ input[type="password"]::placeholder {
     line-height: 150%;
 }
 .input-with-image.password {
-    background-image: url('../../assets/login/icon-password.svg');
+    background-image: url('../../assets/icon-password.svg');
     background-position: left center;
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -116,7 +125,7 @@ input[type="password"]::placeholder {
     border-radius: 8px;
     width: 311px;
     height: 46px;
-    margin: auto;
+    margin: 24px auto 24px auto ;
     border: none;
     border-radius: 8px;
     background: var(--purple, #633CFF);
@@ -175,7 +184,8 @@ input{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-top: 9px;
     }
     #loginBox{
         width: 476px;
@@ -183,6 +193,11 @@ input{
         margin: 0px;
         background-color: white;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    #loginTxt{
+        margin-top: 22px;
     }
     #loginTxt{
         color: var(--dark-grey, #333);
@@ -195,10 +210,22 @@ input{
         margin-top: 40px;
     }
     #parametersBox{
-        margin: 0px 0px 0px 40px;
+        display: flex;
+        width: 83%;
+        align-self: center;
+        flex-direction: column;
     }
     #createAcc span{
         display: inline;
+    }
+    .parameterDesc{
+        margin-top: 20px;
+    }
+    #submit {
+    margin: 8px auto 24px auto;
+    }
+    #loginBox{
+        min-height: 570px;
     }
 }
 @media (min-width:1440px){
