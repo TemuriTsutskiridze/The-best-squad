@@ -220,6 +220,23 @@ main {
 .small {
   gap: 8px;
 }
+.preview-tablet {
+  color: var(--Purple, #633cff);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  display: none;
+}
+.for-mobile {
+  display: none;
+}
+h1 {
+  color: var(--Dark-Grey, #333);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
 @media screen and (min-width: 768px) {
   header {
     padding: 24px;
@@ -277,7 +294,7 @@ main {
   .using-link {
     padding: 0px 100px;
   }
-  .mobile-version {
+  .last-div {
     margin-top: 10px;
     position: relative;
     padding: 24px;
@@ -306,6 +323,40 @@ main {
     padding: 20px;
     top: 250px;
   }
+  #preview {
+    display: none;
+  }
+  .preview-tablet {
+    display: block;
+  }
+  .preview-div {
+    min-width: 114px;
+    min-height: 46px;
+  }
   @media screen and (min-width: 1440px) {
+    .for-mobile {
+      min-height: 786px;
+      border-radius: 12px;
+      background-color: var(--white, #fff);
+      display: flex;
+      min-width: 560px;
+      padding: 24px;
+      gap: 8px;
+      justify-content: center;
+    }
+    main {
+      flex-direction: row;
+      padding: 0 40px 40px 40px;
+    }
+    .link-div {
+      min-height: 122px;
+      min-height: 46px;
+    }
+    .using-link {
+      padding: 0 112px;
+    }
+    .started-div {
+      min-height: 429px;
+    }
   }
 }
