@@ -4,6 +4,10 @@
     margin: 0;
 }
 body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -170,12 +174,9 @@ input[type="password"]::placeholder {
 input{
     all: unset;
 }
-@media (min-width:728px){
+@media (min-width:768px){
     .input-with-image{
         width: 89%;
-    }
-    #parametersBox{
-        width: 396px;
     }
     *{
         margin: 0;
