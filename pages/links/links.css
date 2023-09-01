@@ -139,7 +139,6 @@ footer {
 .container {
   border-radius: 12px;
   background: var(--light-grey, #fafafa);
-  display: none;
   padding: 24px;
   flex-direction: column;
   gap: 12px;
@@ -343,6 +342,7 @@ h1 {
       padding: 24px;
       gap: 8px;
       justify-content: center;
+      align-self: flex-start;
     }
     main {
       flex-direction: row;
@@ -357,6 +357,11 @@ h1 {
     }
     .started-div {
       min-height: 429px;
+    }
+
+    .list {
+      flex-direction: column;
+      gap: 20px;
     }
   }
 }
