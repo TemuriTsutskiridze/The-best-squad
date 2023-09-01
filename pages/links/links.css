@@ -284,6 +284,9 @@ h1 {
     min-width: 114px;
     min-height: 46px;
   }
+  .list{
+    flex-direction: column;
+  }
   @media screen and (min-width: 1440px) {
     .link-div {
       min-height: 122px;
@@ -297,7 +300,6 @@ h1 {
     }
 
     .list {
-      flex-direction: column;
       gap: 20px;
     }
   }
