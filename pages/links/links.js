@@ -64,6 +64,32 @@ addButton.addEventListener("click", function () {
   option.textContent = "github";
   githubSelect.append(option);
 
+  const option2 = document.createElement("option");
+  option2.value = "Frontend Mentor";
+  option2.textContent = "Frontend Mentor";
+  githubSelect.append(option2);
+
+  const option3 = document.createElement("option");
+  option3.value = "Twitter";
+  option3.src = "../assets/input-icons/icon-twitter.svg";
+  option3.textContent = "Twitter";
+  githubSelect.append(option3);
+
+  const option4 = document.createElement("option");
+  option4.value = "LinkedIn";
+  option4.textContent = "LinkedIn";
+  githubSelect.append(option4);
+
+  const option5 = document.createElement("option");
+  option5.value = "YouTube";
+  option5.textContent = "YouTube";
+  githubSelect.append(option5);
+
+  const option6 = document.createElement("option");
+  option6.value = "Facebook";
+  option6.textContent = "Facebook";
+  githubSelect.append(option6);
+
   const inputLink = document.createElement("div");
   inputLink.classList.add("input-link");
   inputDiv.append(inputLink);
@@ -81,3 +107,14 @@ addButton.addEventListener("click", function () {
 });
 
 console.log(list);
+
+let inputOptions = [
+  { text: "Twitter", src: "../assets/input-icons/icon-twitter.svg" },
+  { text: "YouTUbe", src: "../assets/input-icons/icon-youtube.svg" },
+];
+inputOptions.forEach((item) => {
+  const icons = document.createElement("option");
+  icons.textContent = item.text;
+  icons.classList.add(item.src);
+  option.append(icons);
+});
