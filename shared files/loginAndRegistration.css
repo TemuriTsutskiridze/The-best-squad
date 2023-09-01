@@ -258,5 +258,6 @@ input{
     background: var(--purple-hover-color, #BEADFF);
     box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
 }
-
-
+.forRegister{
+    height: 560px;
+}

@@ -1,0 +1,72 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  padding: 16px 16px 0 24px;
+}
+.two-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  display: flex;
+  gap: 64px;
+  justify-content: space-between;
+}
+.preview-div {
+  padding: 11px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--purple, #633cff);
+}
+.link-div {
+  padding: 11px 27px;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--lightPurple, #efebff);
+  width: 74px;
+  height: 42px;
+}
+.two-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+footer {
+  margin-top: 25px;
+  padding: 0 16px;
+}
+.for-mobile {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .last-div {
+    margin-top: 10px;
+    position: relative;
+    padding: 24px;
+  }
+  header {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .for-mobile {
+    min-height: 786px;
+    border-radius: 12px;
+    background-color: var(--white, #fff);
+    display: flex;
+    min-width: 560px;
+    padding: 24px;
+    gap: 8px;
+    justify-content: center;
+    align-self: flex-start;
+  }
+  main {
+    flex-direction: row;
+    padding: 0 40px 40px 40px;
+  }
+}
