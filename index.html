@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="./pages/login/login.css">
+    <script src="./pages/login/login.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,35 +17,41 @@
                 Add your details below to get back into the app
             </span>
         </p>
+        <form class="login_form" onsubmit="validate(event)">
         <div id="parametersBox">
             <p class="parameterDesc">
                 Email Address
             </p>
+            <div class="parameterInput" id="parameterEmail">
             <label for="email Address">
-                <input  class="parameterInput input-with-image email" for="email" type="email" placeholder="Enter Your Email Address">
+                <input id="email" class="input-with-image" type="text" placeholder="e.g. alex@email.com" name="email">
+                <span id="emailError" class="error">Can't be empty</span>
                 </input>   
             </label>
-               
+        </div>
             <p class="parameterDesc password">
                 Password
             </p>
+        <div class="parameterInput" id="parameterPassword">
             <label for="password">
-                <input  class="parameterInput input-with-image password" for="password" type="password" placeholder="Enter Your Password">
+                <input id="password" class="input-with-image" for="password" type="password" placeholder="Enter Your Password" name="password">
+                <span id="passwordError" class="error">Please check again</span>
                 </input>   
             </label>
-            <div id="submitOrReg">
-                <button id="submit">
-                    <span>Login</span>
+        </div>
+            
+                <button id="submit" type="submit">
+                    Login
                 </button> 
-            </div>
+           
             <p id="createAcc">
                 Don’t have an account?
                 <span id="createAccBlue">
                     Create account
                 </span>
             </p>
+        </form>
         </div>
     </div>
-    
 </body>
 </html>
