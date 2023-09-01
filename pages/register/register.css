@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#head{
+    margin: 32px;
+    gap: 64px;
+}
+#loginBox{
+    margin-top: 71.5px;
+    margin-left: 32px;
+}   
+#loginTxt{
+    color: var(--dark-grey, #333);
+    font-family: Instrument Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+#loginTxt span{
+    color: var(--grey, #737373);
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+#parametersBox{
+    display: flex;
+    width: 80%;
+    align-self: center;
+    flex-direction: column;
+    height: 400px;
+    width: 311px;
+}
+.parameterDesc{
+    margin-top: 40px;
+    color: var(--dark-grey, #333);
+    font-family: Instrument Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.parameterInput {
+    align-items: stretch;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--borders, #D9D9D9);
+    background: var(--white, #FFF);
+}
+.input-with-image:focus{
+    border-radius: 8px;
+    border: 1px solid var(--purple, #633CFF);
+    background: var(--white, #FFF);
+    box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
+}
+
+.parameterInput input {
+    flex: 1; 
+    border: none;
+    outline: none;
+}
+.parameterInput input{
+    height: 100%;
+    width: 386;
+}
+.email{
+    background-image: url('../../assets/login/icon-email.svg');
+}
+.input-with-image{
+    cursor: text;
+    transition: 0.4s;
+    width: 80%;
+}
+.input-with-image.email {
+    background-image: url('../../assets/icon-email.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+input[type="email"]::placeholder {
+    color: var(--dark-grey, #333);
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+input[type="password"]::placeholder {
+    color: var(--dark-grey, #333);
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.input-with-image.password {
+    background-image: url('../../assets/icon-password.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.parameterDesc.password{
+    margin-top: 45px;
+}
+#submitOrReg{
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    height: 100px;
+    transition: 0.3s;
+    align-items: center;
+    justify-content: center;
+}
+#submit{
+    border-radius: 8px;
+    width: 311px;
+    height: 46px;
+    margin: 24px auto 24px auto ;
+    border: none;
+    border-radius: 8px;
+    background: var(--purple, #633CFF);
+    cursor: pointer;
+    transition: 0.4s;
+}
+#submit span{
+    color: var(--white, #FFF);
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+#createAcc{
+    color: var(--grey, #737373);
+    text-align: center;
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+#createAcc span{
+    display: block;
+    color: var(--purple, #633CFF);
+    font-family: Instrument Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    cursor: pointer;
+}
+#submit:active{
+    border-radius: 8px;
+    background: var(--purple-hover-color, #BEADFF);
+    box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
+    scale: 0.97;
+}
+input{
+    all: unset;
+}
+@media (min-width:768px){
+    .input-with-image{
+        width: 89%;
+    }
+    *{
+        margin: 0;
+    }
+    body{
+        background: var(--light-grey, #FAFAFA);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 9px;
+    }
+    #loginBox{
+        width: 476px;
+        height: 500px;
+        margin: 0px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    #loginTxt{
+        margin-top: 22px;
+    }
+    #loginTxt{
+        color: var(--dark-grey, #333);
+        font-family: Instrument Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    #parametersBox{
+        display: flex;
+        width: 83%;
+        align-self: center;
+        flex-direction: column;
+    }
+    #createAcc span{
+        display: inline;
+    }
+    .parameterDesc{
+        margin-top: 20px;
+    }
+    #submit {
+    margin: 8px auto 24px auto;
+    }
+    #loginBox{
+        min-height: 570px;
+    }
+}
+@media (min-width:1440px){
+    
+}
