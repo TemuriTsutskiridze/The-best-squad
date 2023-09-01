@@ -34,6 +34,25 @@ header {
   align-items: center;
   gap: 27px;
 }
+
+footer {
+  margin-top: 25px;
+  padding: 0 16px;
+}
+.for-mobile {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .last-div {
+    margin-top: 10px;
+    position: relative;
+    padding: 24px;
+  }
+  header {
+    padding: 24px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .for-mobile {
     min-height: 786px;
