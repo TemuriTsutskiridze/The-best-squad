@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../login/login.css">
+    <script src="register.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,29 +17,39 @@
                 Let’s get you started sharing your links!
             </span>
         </p>
+        <form class="login_form" onsubmit="validate(event)">
         <div id="parametersBox">
             <p class="parameterDesc">
                 Email Address
             </p>
+            <div class="parameterInput" id="parameterEmail">
             <label for="email Address">
-                <input  class="parameterInput input-with-image email" for="email" type="email" placeholder="Enter Your Email Address">
+                <input  id="email" class="input-with-image email" for="email" type="text" placeholder="Enter Your Email Address">
+                <span id="emailError" class="error">Can't be empty</span>
                 </input>   
             </label>
+            </div>
                
             <p class="parameterDesc password">
                 Password
             </p>
+            <div class="parameterInput" id="parameterPassword">
             <label for="password">
-                <input  class="parameterInput input-with-image password" for="password" type="password" placeholder="At least .8 characters">
+                <input id="password" class="parameterInput input-with-image password" for="password" type="password" placeholder="At least .8 characters">
+                <span id="passwordError" class="error">Please check again</span>
                 </input>   
             </label>
+        </div>
             <p class="parameterDesc password">
-                repeat passowrd
+                Confirm password
             </p>
+            <div class="parameterInput" id="parameterConfirmPassword">
             <label for="password">
-                <input  class="parameterInput input-with-image password" for="password" type="password" placeholder="At least .8 characters">
+                <input id="confirmPassword" class="parameterInput input-with-image password" for="password" type="password" placeholder="At least .8 characters">
+                <span id="confirmPasswordError" class="error">Passwords don't match.</span>
                 </input>   
             </label>
+            </div>
             <div id="submitOrReg">
                 <button id="submit">
                     <span>Create new account</span>
@@ -46,9 +57,9 @@
             </div>
             <p id="createAcc">
                 Already have an account? 
-                <span id="createAccBlue">
-                    Login
-                </span>
+                <a href="../../index.html" id="createAccBlue">
+                   Login
+                </a>
             </p>
         </div>
     </div>
